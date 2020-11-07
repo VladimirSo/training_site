@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+    .main-footer-top {
+        padding-top: 75px;
+        padding-bottom: 65px;
+    }
+
+    .nav-list_footer {
+        padding-top: 7px;
+    }
+
+    .nav-list_footer .nav-list__item {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+
+    .nav-list_footer .nav-list__link:hover {
+        color: inherit;
+        border-bottom: none;
+    }
+
+    .footer-contacts {
+        max-width: 745px;
+        margin-right: 25px;
+    }
+
+    .footer-contacts__btn {
+        margin-bottom: 32px;
+    }
+
+    .socials__item:not(:last-child) {
+        margin-right: 18px;
+    }
+
+    .copyright {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

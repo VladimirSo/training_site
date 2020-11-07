@@ -1,0 +1,117 @@
+.slider {
+    max-width: 280px;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+}
+
+.swiper-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+
+    background-color: #ebebeb;
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff4e2e;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .slider {
+        max-width: 944px;
+    }
+
+    .swiper-container {
+        padding-bottom: 132px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 14px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .slider {
+        max-width: 1240px;
+    }
+
+    .swiper-container {
+        max-width: 1170px;
+        padding-bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 140px;
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        background-color: #fff;
+        border-radius: 50%;
+        border-style: none;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        transform: scale(1, -1);
+        box-shadow: 0 0 20px 0 rgba(255, 78, 46, 0.5);
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+
+        background-image: url("../img/arrow-left.png");
+    }
+
+    .swiper-button-next {
+        right: 5px;
+
+        background-image: url("../img/arrow-right.png");
+    }
+
+}

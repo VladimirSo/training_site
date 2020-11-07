@@ -1,0 +1,222 @@
+@media (min-width: 768px) {
+    .main-header {
+        overflow: hidden;
+    }
+
+    /**/
+    .main-header-top {
+        margin: 0;
+        padding-top: 28px;
+        padding-bottom: 30px;
+    }
+
+    .main-nav__btn {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+
+        border-radius: 0;
+        background-size: 45px auto;
+    }
+
+    .header-contacts__phone {
+        font-size: 1.25em;
+        align-items: center;
+    }
+
+    .header-contacts__btn {
+        margin-left: 28px;
+    }
+
+    .btn_contact {
+        color: #f9187e;
+        height: auto;
+        min-height: 45px;
+        min-width: 208px;
+
+        border: 1px solid #f9187e;
+        border-radius: 0;
+
+        background-image: none;
+        background-color: inherit;
+    }
+
+    .header-contacts .btn_contact:hover {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    .btn_contact:hover {
+        background-color: #f9187e;
+        color: #fff;
+    }
+
+
+    .btn__content {
+        font-size: 0.8em;
+        display: block;
+    }
+
+    /**/
+    .personal-info {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 35px;
+        margin: 0 auto;
+        max-width: 1024px;
+
+        z-index: 1;
+    }
+
+    .personal-info::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 70px;
+        right: -375px;
+
+        width: 920px;
+        height: 770px;
+
+        background-image: url("../img/ellipse-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transform: scaleY(0.83);
+    }
+
+    .personal-info__foto {
+        order: 2;
+
+        margin: 0;
+        padding: 0;
+        max-width: 435px;
+        min-width: 375px;
+        width: 50%;
+    }
+
+    .personal-foto-wrapper {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .personal-foto {
+        height: auto;
+        margin-right: 0;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .personal-foto::before {
+        background-image: none;
+    }
+
+    .about-info {
+        order: 1;
+
+        max-width: 570px;
+        width: 55%;
+        margin: 205px 0 auto 0;
+        padding: 0 0 0 5px;
+
+        background-color: transparent;
+    }
+
+    .about-info-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-info__title {
+        margin-bottom: 42px;
+    }
+
+    .about-title-name {
+        font-size: 1.35em;
+        text-align: left;
+    }
+
+    .about-title-details {
+        font-size: 0.625em;
+        text-align: left;
+
+        margin: 15px 0 0 0;
+    }
+
+    .about-info__btn {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .btn_orange {
+        font-size: 0.9em;
+
+        width: 320px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    /**/
+    .fly-top-1 {
+        width: 35px;
+        height: 42px;
+        left: 5.8vw;
+        top: calc(100% - 130px);
+    }
+
+    .fly-top-2 {
+        width: 45px;
+        height: 50px;
+        left: 7.5vw;
+        top: 52px;
+    }
+
+    .fly-top-3 {
+        background-image: url("../img/elem-up-3.png");
+
+        width: 68px;
+        height: 26px;
+        left: 86.5vw;
+        top: 45px;
+    }
+
+    .fly-top-4 {
+        width: 83px;
+        height: 39px;
+        left: 85vw;
+        top: calc(100% - 220px);
+    }
+
+    .fly-top-5 {
+        width: 53px;
+        height: 36px;
+        left: 35.2vw;
+        top: calc(100% - 178px);
+    }
+
+    .fly-top-6 {
+        background-image: url("../img/elem-up-6.png");
+
+        width: 62px;
+        height: 34px;
+        left: 41.2vw;
+        top: 135px;
+    }
+
+    @keyframes fly {
+        0% {
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+    }
+
+}

@@ -1,0 +1,132 @@
+@media (min-width: 1200px) {
+    .main-nav {
+        max-width: 50%;
+    }
+
+    .main-nav__btn {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .nav-list__item {
+        margin-right: 30px;
+    }
+
+    .nav-list__item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-list__link {
+        font-size: 0.8em;
+        color: #000000;
+    }
+
+    .nav-list__link:hover {
+        color: #f9187e;
+    }
+
+    .header-contacts {
+        max-width: 50%;
+    }
+
+    .header-contacts__btn {
+        margin-left: 30px;
+    }
+
+    /**/
+    .personal-info {
+        max-width: 1340px;
+        padding-left: 85px;
+        padding-right: 0;
+    }
+
+    .personal-info::before {
+        top: 35px;
+        left: 61%;
+
+        transform: scaleY(1);
+    }
+
+    .personal-info__foto {
+        max-width: 450px;
+    }
+
+    .personal-foto {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .about-info {
+        max-width: 800px;
+        width: 60%;
+        margin-top: 178px;
+        padding-left: 0;
+    }
+
+    .about-title-name {
+        font-size: 2em;
+    }
+
+    .about-title-details {
+        margin: 10px 0 40px 0;
+    }
+
+    .btn_orange {
+        width: 270px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    /**/
+    .fly-top-1 {
+        left: calc(-2.3vw);
+        top: calc(50% - 65px);
+    }
+
+    .fly-top-2 {
+        left: calc(-8.4vw);
+        top: 35px;
+    }
+
+    .fly-top-3 {
+        left: calc(26vw);
+        top: 65px;
+    }
+
+    .fly-top-4 {
+        left: calc(34.4vw);
+        top: calc(100% - 230px);
+    }
+
+    .fly-top-5 {
+        left: calc(4.7vw);
+        top: calc(100% - 95px);
+    }
+
+    .fly-top-6 {
+        background-image: none;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+    }
+
+    @keyframes fly {
+        0% {
+            left: 70%;
+            top: 50%;
+            width: 0;
+            height: 0;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+    }
+}

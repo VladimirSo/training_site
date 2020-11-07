@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*
+* {
+    border: 1px solid #f00 !important;
+}
+*/
+
+body {
+    min-width: 320px;
+    margin: 0;
+
+    background-color: #f9f9f9;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #8993ad;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+body.modal-active {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+
+    /* IE6, IE7*/
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/*
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+
+/**/
+.btn {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/**/
+.link_under {
+    position: relative;
+}
+
+.link_under::before {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #f9187e;
+
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.link_under:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+}
+
+.link_over {
+    position: relative;
+}
+
+.link_over::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #ff4e2e;
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.link_over::before {
+    top: -5px;
+}
+
+.link_over:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}

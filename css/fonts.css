@@ -1,0 +1,43 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("../fonts/roboto-400.woff2") format("woff2"),
+        url("../fonts/roboto-400.woff") format("woff");
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url("../fonts/roboto-500.woff2") format("woff2"),
+        url("../fonts/roboto-500.woff") format("woff");
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url("../fonts/roboto-700.woff2") format("woff2"),
+        url("../fonts/roboto-700.woff") format("woff");
+}
+
+/* roboto-900 - latin_cyrillic */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local("Roboto Black"), local("Roboto-Black"),
+        url("../fonts/roboto-900.woff2") format("woff2"),
+        url("../fonts/roboto-900.woff") format("woff");
+}

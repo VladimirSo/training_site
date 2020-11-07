@@ -1,0 +1,22 @@
+.fixed-container {
+    min-width: 320px;
+    width: 100%;
+
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .fixed-container {
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fixed-container {
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+}

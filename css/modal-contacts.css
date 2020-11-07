@@ -1,0 +1,146 @@
+.open-modal {
+    position: fixed;
+    width: 100%;
+}
+
+.modal-contacts {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: auto;
+    z-index: 15;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    background-color: rgba(30, 30, 30, 0.8);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open-modal .modal-contacts {
+    opacity: 1;
+    visibility: visible;
+}
+
+.callback {
+    display: none;
+
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    max-width: 320px;
+    min-height: 550px;
+
+    margin: auto;
+    padding: 15px;
+
+    background: #fbfbfb;
+}
+
+.open-modal .callback {
+    display: block;
+}
+
+.callback__close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 32px;
+    height: 32px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color 0.5s ease-in-out;
+}
+
+.callback__close-btn:hover {
+    background-color: #ff4e2e;
+}
+
+.callback__close-btn::before,
+.callback__close-btn::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    height: 26px;
+    width: 2px;
+
+    background-color: #ff4e2e;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.callback__close-btn::before {
+    transform: rotate(45deg);
+}
+
+.callback__close-btn::after {
+    transform: rotate(-45deg);
+}
+
+.callback__close-btn:hover::before,
+.callback__close-btn:hover::after {
+    background-color: #fbfbfb;
+}
+
+.callback__title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.callback-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.callback-input__note {
+    margin: 10px 0;
+}
+
+.callback__name,
+.callback__phone,
+.callback__message {
+    color: #000;
+    border: 1px solid #8993ad;
+
+    width: 100%;
+    padding: 5px;
+}
+
+.callback__message {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.callback__send-btn {
+    border: none;
+
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+@media (min-width: 768px) {
+    .callback {
+        max-width: 650px;
+    }
+
+    .callback__close-btn {
+        top: 15px;
+        right: 15px;
+    }
+}

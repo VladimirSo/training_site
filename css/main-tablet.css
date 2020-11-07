@@ -1,0 +1,113 @@
+@media (min-width: 768px) {
+
+    .offers__btn,
+    .portfolio__btn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-content-title {
+        font-size: 2.7em;
+        font-weight: 700;
+    }
+
+    /**/
+    .offers {
+        padding-top: 85px;
+        padding-bottom: 105px;
+    }
+
+    .offers__title {
+        margin-bottom: 82px;
+    }
+
+    .offers-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .offers-list__item {
+        background-size: 75px auto;
+
+        max-width: 275px;
+        padding-top: 95px;
+
+        background-position: 50% 5px;
+    }
+
+    .offers-list__item:not(:last-child),
+    .offers-list__item:last-child {
+        margin-bottom: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offers__btn {
+        margin-top: 20px;
+    }
+
+    /**/
+    .portfolio {
+        max-width: 1024px;
+        padding: 88px 40px 100px 40px;
+    }
+
+    .portfolio__title {
+        margin-bottom: 95px;
+    }
+
+    .site-example {
+        min-width: 455px;
+        margin-right: 35px;
+    }
+
+    .site-example__title {
+        font-size: 1.25em;
+
+        margin-top: 14px;
+    }
+
+    .portfolio__btn {
+        margin-top: 85px;
+    }
+
+    /**/
+/*    .promo {}*/
+
+    .promo-container {
+        padding-top: 78px;
+        padding-bottom: 78px;
+
+        background-image: url("../img/elem-dwn-3.png"),
+            url("../img/elem-dwn-4.png"),
+            url("../img/elem-dwn-5.png");
+        background-repeat: no-repeat;
+        background-size: 30px 33px,
+            55px 26px,
+            53px 36px;
+        background-position: 155px 25px,
+            50vw calc(100% - 30px),
+            calc(100vw - 145px) calc(100% - 35px);
+
+        transition: background 1.15s linear;
+    }
+
+    .promo__text-main {
+        font-size: 2.20em;
+        line-height: 1.25;
+        letter-spacing: 0.010em;
+
+        margin-bottom: 30px;
+    }
+
+    .promo-notice {
+        line-height: 1.75;
+        padding-right: 100px;
+    }
+}
