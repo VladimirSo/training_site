@@ -19,6 +19,10 @@ $(function () {
         bodyElem.css('padding-right', paddingShift);
         // переключние класса на <body>, открываем окно
         bodyElem.toggleClass('open-modal');
+        // передача фокуса на поле ввода имени
+        setTimeout(function () {
+            nameInputElem.focus();
+        }, 1000);
         // навешивание обработчика события по клику на модальном окне
         modalElem.bind('click', modalCloseHandler);
         // навешивание обработчика по нажатию клавиши на <body>
