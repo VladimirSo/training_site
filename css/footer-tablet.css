@@ -62,8 +62,9 @@
     }
 
     .footer-contacts .btn_contact {
-        border-color: #f9187e;
         width: 100%;
+
+        box-shadow: none;
     }
 
     .footer-contacts__btn {

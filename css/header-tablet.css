@@ -42,8 +42,9 @@
     }
 
     .header-contacts .btn_contact:hover {
-        transform: scale(1);
         box-shadow: none;
+
+        transition-property: color, background-color;
     }
 
     .btn_contact:hover {
